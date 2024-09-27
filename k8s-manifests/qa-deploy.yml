@@ -15,6 +15,6 @@ spec:
   spec:
     containers:
     - name: login
-      image: ravi2krishna/ecomm
+      image: ravi2krishna/ecomm:qa
       ports:
       - containerPort: 80
