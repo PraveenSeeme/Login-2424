@@ -14,7 +14,7 @@ spec:
         app: ecomm
   spec:
     containers:
-    - name: login
+    - name: ecomm
       image: ravi2krishna/ecomm:qa
       ports:
       - containerPort: 80
