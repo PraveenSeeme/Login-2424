@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecomm
+  namespace: qa
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: ecomm
+  template:
+    metadata:
+      labels:
+        app: ecomm
+  spec:
+    containers:
+    - name: login
+      image: ravi2krishna/ecomm
+      ports:
+      - containerPort: 80
